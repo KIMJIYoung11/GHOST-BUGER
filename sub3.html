@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1450">
+    <title>EVENT</title>
+    <link rel="shortcut icon" href="images/faviconi.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/sub3.css">
+    <!--제이쿼리 라이브러리파일-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!--탭 제이쿼리-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            //처음들어갔을때 모습 만들기...
+            $(".tab_content").hide(); //tab_content 부분을 모두 숨김.
+            $("ul.tabs li:first").addClass("active").show(); //첫번째 탭이 active클래스를 붙이고, 보여줌.
+            $(".tab_content:first").show(); //tab_contents중 첫번째꺼를 보여줌
+
+            //On Click Event
+            $("ul.tabs li").click(function () {
+
+                $("ul.tabs li").removeClass("active"); //Remove any "active" class
+                $(this).addClass("active"); //선택한 탭에만 active클래스 붙임
+                $(".tab_content").hide(); //모든 contents들 숨김
+
+                var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+                /*.attr( attributeName ) -> 선택한 요소의 속성의 값을 가져옵니다.
+                .find()는 어떤 요소의 하위 요소 중 특정 요소를 찾을 때 사용합니다.*/
+                $(activeTab).fadeIn(); //Fade in the active ID content(active되어있는 칸의 id 값을 가진 부분이 나타남)
+                return false;
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div id="hearder">
+        <div id="hearder_inner" class="clearfix">
+            <h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="로고"></a></h1>
+            <ul id="gnb">
+                <li>
+                    <a href="sub1.html">메뉴</a>
+                </li>
+                <li>
+                    <a href="sub2.html">가맹문의</a>
+                </li>
+                <li>
+                    <a href="sub3.html">이벤트</a>
+                </li>
+                <li>
+                    <a href="sub4.html">브랜드 스토리</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--hearder 끝-->
+
+    <div id="baner">
+        <img src="images/event_banner.jpg" alt="">
+    </div>
+    <!--banner 끝-->
+
+
+    <div id="wrapper">
+        <!--탭 메뉴 영역 -->
+        <ul class="tabs">
+            <li class="event"><a href="#tab1">진행중인 이벤트</a></li>
+            <li class="event2"><a href="#tab2">제휴 이벤트</a></li>
+        </ul>
+
+        <!--탭 콘텐츠 영역 -->
+        <div class="tab_container">
+
+            <div id="tab1" class="tab_content">
+                <!--Content-->
+
+                <h1><img src="images/event1.jpg" alt="포토리뷰"></h1>
+                <div class="text">
+                    <h3>[포토리뷰 이벤트]</h3>
+                    <p>구매후 포토리뷰를 올려주시면 <br>
+                        모든 햄버거가 무료</p>
+                    <h4>2022.07~01~07.09</h4>
+                </div>
+                <h1><img src="images/event2.jpg" alt="만원팩"></h1>
+                <div>
+                    <h3>[다시 돌아온 만원팩]</h3>
+                    <p>구성 : 스리라차 치킨버거세트+ 에그불고기 버거세트+<br>
+                        후라이드치킨</p>
+                    <h4>2022.06~20~06.030</h4>
+                </div>
+                <h1><img src="images/event3.jpg" alt="방문포장할인"></h1>
+                <div>
+                    <h3>[방문 포장 할인]</h3>
+                    <p>매장 방문 포장시 30%할인 !</p>
+                    <h4>2022.06~10~06.20</h4>
+                </div>
+                <h1><img src="images/event4.jpg" alt="선택할인"></h1>
+                <div>
+                    <h3>[선택할인 이벤트]</h3>
+                    <p>전체어떤 버거를 선택해도 2개 7000원! 할인이벤트</p>
+                    <h4>2022.06~01~06.06</h4>
+                </div>
+                <h1><img src="images/event5.jpg" alt="쿠폰"></h1>
+                <div>
+                    <h3>[선착순 쿠폰증정]</h3>
+                    <p>선착권으로 쿠폰쏜다! 50%할인쿠폰 증정</p>
+                    <h4>기간: 소진시까지</h4>
+                </div>
+
+                <h1><img src="images/event6.jpg" alt="세트업"></h1>
+                <div>
+                    <h3>[무료세트업 이벤트]</h3>
+                    <p>오징어버거 출시기념 무료세트업 이벤트</p>
+                    <h4>2022.05.20~05.27</h4>
+                </div>
+
+
+
+            </div>
+
+            <div id="tab2" class="tab_content">
+                <!--Content-->
+                <h1><img src="images/ktevent1.jpg" alt="케이티 이벤트"></h1>
+                <div>
+                    <h3>[kt 멤버십 이벤트]</h3>
+                    <p>
+                        kt 멤버십 고객들을 위한 혜택 <br>
+                        햄버거 세트 10%할인
+                    </p>
+                    <h4>기간 : 2022.05.01~05.06</h4>
+                </div>
+                <h1><img src="images/kakao_event2.jpg" alt="카카오 이벤트"></h1>
+                <div>
+                    <h3>[카카오페이 x 고스버거]</h3>
+                    <p>
+                        카카오페이로 결제시 배달 20%할인
+                    </p>
+                    <h4>기간 : 2022.05.10~05.20</h4>
+                </div>
+                <h1><img src="images/card_event3jpg.jpg" alt="현대카드 이벤트"></h1>
+                <div>
+                    <h3>[현대카드 포인트 이벤트]</h3>
+                    <p>
+                        현대카드로 결제하면 최대 30%할인
+                    </p>
+                    <h4>기간 : 2022.06.01~06.07</h4>
+                </div>
+                <h1><img src="images/vip_event4.jpg" alt="vip 이벤트"></h1>
+                <div>
+                    <h3>[VIP 멤버십 이벤트]</h3>
+                    <p>
+                        VIP 멤버십을 위한 7000원 할인쿠폰 증정
+                    </p>
+                    <h4>기간 : 상시</h4>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <!--이벤트 끝-->
+    <div id="happy">
+        <img src="images/happymeal.jpg" alt="해피밀">
+    </div>
+
+    <ul id="Figure">
+        <li><img src="images/happybox1.jpg" alt="센과 치히로"></li>
+        <li><img src="images/kittybox2.jpg" alt="키티 피규어"></li>
+        <li><img src="images/happybox3.jpg" alt="미니언 피규어"></li>
+    </ul>
+
+    <div id="footer">
+        <div id="footer_inner" class="clearfix">
+            <div id="f_logo">
+                <a href="#"><img src="images/logo.png" alt="로고"></a>
+            </div>
+            <div class="f_text">
+
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">회사소개</a>
+                    </li>
+                    <li>
+                        <a href="#">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보</a>
+                    </li>
+                    <li>
+                        <a href="#">서비스이용약관</a>
+                    </li>
+
+                </ul>
+                <p class="name">
+                    부산광역시 중구 중앙대로 중앙빌딩 10층(대표 : 김지영) <br>
+                    사업자 등록번호 : 000-000-000 개인정보책임자 : 김지영 <br>
+                    TEL:010-000-000 FAX: 051-0000-000
+                </p>
+                <h5>고객센터 <br>
+                    051-000-0000
+                </h5>
+                <p>(이용시간 : 09:00~18:00)</p>
+            </div>
+            <div id="f_img">
+                <img src="images/fasbook-4.png" alt="폐이스북">
+                <img src="images/inster.png" alt="인스타">
+                <img src="images/youtube.png" alt="유투브">
+            </div>
+        </div>
+
+
+</body>
+
+</html>
