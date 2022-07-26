@@ -1,0 +1,340 @@
+@font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 300;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff') format('woff');
+}
+
+.lottemartdream * {
+    font-family: 'LotteMartDream', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    vertical-align: middle;
+    border: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.body {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    color: #666;
+    min-width: 1450px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#hearder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#hearder_inner {
+    margin: auto;
+    width: 1320px;
+}
+
+
+#logo {
+    float: left;
+    padding-top: 10px;
+
+}
+
+
+#gnb>li {
+    float: left;
+    padding: 37px 20px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+#gnb {
+    float: right;
+
+}
+
+#aff_banner {
+    position: relative;
+    margin-top: 100px;
+}
+
+#aff_banner img {
+    width: 100%;
+}
+
+#bnner_text {
+    position: absolute;
+    top: 63px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 1320px;
+
+}
+
+#bnner_text h1 {
+    font-size: 60px;
+    padding: 10px 0;
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+#bnner_text h2 {
+    font-size: 25px;
+    padding: 20px 0;
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+#bnner_text h4 {
+    font-size: 20px;
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 400;
+    padding: 10px 0;
+
+}
+
+#system {
+    margin: auto;
+    width: 1320px;
+}
+
+#system h2 {
+    padding-top: 30px;
+}
+
+#system ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+#system ul li {
+    width: 50%;
+    padding-top: 50px;
+}
+
+#procedure {
+    margin: auto;
+    width: 1320px;
+}
+
+#procedure h2 {
+    padding: 30px 0;
+}
+
+#procedure ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#procedure ul li {
+    padding: 30px 0;
+}
+
+.arrow {
+    margin-top: 90px;
+}
+
+#procedure ul.procedure2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.arrow2 {
+    margin: 90px 30px;
+}
+
+#Condition {
+    margin: auto;
+    width: 1320px;
+    position: relative;
+}
+
+#Condition_img h2 {
+    padding: 30px 0;
+}
+
+
+
+#Condition_text {
+    position: absolute;
+    top: 134px;
+    left: 79px;
+    font-size: 20px;
+}
+
+#online {
+    margin: auto;
+    width: 1320px;
+    padding-bottom: 80px;
+
+}
+
+#online {
+    background-image: url(../images/input_img.png);
+    background-repeat: no-repeat;
+    height: 1167px;
+    background-position: center;
+    position: relative;
+}
+
+#inpu {
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 180px;
+}
+
+#inpu h1 {
+    text-align: center;
+    padding: 30px 0;
+}
+
+#inpu p {
+    padding: 20px 0;
+}
+
+#inpu table th {
+    padding-left: 30px;
+
+
+}
+
+#inpu table td {
+    padding: 20px 0;
+}
+
+.box {
+    width: 350px;
+    height: 100px;
+    text-align: center;
+    overflow-y: scroll;
+    position: absolute;
+    top: 968px;
+    bottom: 50px;
+    left: 500px;
+}
+
+.rodls {
+    position: relative;
+}
+
+
+
+
+.summit {
+    width: 80px;
+    height: 50px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    float: left;
+    margin: -9px 162px;
+
+}
+
+.reset {
+    width: 80px;
+    height: 50px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    float: right;
+    margin: -50px 216px;
+}
+
+#footer {
+    background-color: #ffeb99;
+    margin-top: 80px;
+    font-family: 'Binggrae';
+}
+
+#footer_inner {
+    margin: auto;
+    width: 1320px;
+    display: flex;
+
+}
+
+#f_logo {
+    float: left;
+    padding-top: 60px;
+    padding-left: 130px;
+}
+
+.text {
+    padding-left: 225px;
+}
+
+.text ul li {
+    float: left;
+    padding: 10px 40px;
+    padding-left: 0px;
+    font-weight: bold;
+
+}
+
+.name {
+    padding-top: 20px;
+}
+
+.text h5 {
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+.text p {
+    padding-top: 20px;
+}
+
+#f_img {
+    justify-content: space-between;
+    margin-left: 250px;
+    padding-top: 10px;
+}
