@@ -65,6 +65,7 @@ ol {
     width: 100%;
     z-index: 20;
     background-color: rgba(255, 255, 255, 0.5);
+
 }
 
 #hearder_inner {
@@ -109,6 +110,7 @@ ol {
 
 .mb img {
     width: 100%;
+    margin-top: 100px;
 }
 
 .best {

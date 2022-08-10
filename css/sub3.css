@@ -195,12 +195,12 @@ ol {
     justify-content: space-around;
 }
 
-#Figure ul li {
-    width: 32%;
+#Figure li {
+    width: 33.3%;
 }
 
-#Figure ul li img {
-    width: 100%;
+#Figure li img {
+    max-width: 100%;
 }
 
 #footer {
