@@ -1,0 +1,352 @@
+@font-fac {
+    font-family: 'EB Garamond',
+        serif;
+    font-family: 'Nanum Myeongjo',
+        serif;
+    font-family: 'Noto Sans KR',
+        sans-serif;
+}
+
+
+@font-face {
+    font-family: 'Y_Spotlight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    vertical-align: middle;
+    border: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.body {
+    font-family: 'Binggrae';
+    font-size: 18px;
+    line-height: 28px;
+    color: #666;
+    min-width: 1450px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#hearder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#hearder_inner {
+    margin: auto;
+    width: 1320px;
+}
+
+
+#logo {
+    float: left;
+    padding-top: 10px;
+
+}
+
+
+#gnb>li {
+    float: left;
+    padding: 37px 20px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+#gnb {
+    float: right;
+
+}
+
+#burger {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+#burger img {
+    width: 100%;
+}
+
+#text {
+    width: 1200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+
+}
+
+#text h1 {
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+#new {
+    margin: auto;
+    width: 1320px;
+    text-align: center;
+
+}
+
+#new h1 {
+    background-color: black;
+    display: inline-block;
+    color: white;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+#new ul li {
+    background-image: url(../images/Untitled-8.png);
+    float: left;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 33.3%;
+    background-position: center top;
+    padding-top: 100px;
+
+}
+
+
+
+#new ul li h2 {
+    padding: 20px 0;
+}
+
+#new ul li h3 img:hover {
+    transform: rotate(-15deg);
+    transition: all 0.5s;
+}
+
+#wrapper {
+    text-align: center;
+    margin-top: 80px
+}
+
+
+#bag {
+    background-color: #f8f6d5;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.tabs {
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+}
+
+.tabs li {
+    padding: 10px;
+}
+
+.tabs p {
+    font-family: 'Y_Spotlight';
+    padding: 5px 0;
+}
+
+#tab1 {
+    width: 1320px;
+    margin: auto;
+}
+
+#tab1 ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: flex-end;
+}
+
+.tab_content ul li {
+    width: 33.3%;
+}
+
+.text {
+    padding: 30px 0;
+    text-align: center;
+}
+
+#tab1 ul li p {
+    padding: 20px 0;
+    font-family: 'Noto Sans KR', ;
+    font-size: 17px;
+}
+
+#tab1 ul li h2 {
+    color: #a11a0c;
+    font-family: 'Y_Spotlight';
+
+}
+
+.por {
+    position: relative;
+}
+
+.best1 {
+    position: absolute;
+    top: -19px;
+    left: 59px;
+}
+
+#tab1 ul li img:hover {
+    transform: scale(1.2, 1.2);
+    transition: all 0.5s;
+}
+
+#tab2 {
+    margin: auto;
+    width: 1320px;
+}
+
+#tab2 ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+#tab2 ul li {
+    width: 50%;
+}
+
+#tab2 ul li p {
+    padding: 20px 0;
+    font-family: 'Noto Sans KR', ;
+    font-size: 17px;
+}
+
+#tab2 li h2 {
+    color: #a11a0c;
+    font-family: 'Y_Spotlight';
+    padding: 10px 0;
+}
+
+#tab2 ul li img:hover {
+    transform: scale(0.9, 0.9);
+    transition: all 0.5s;
+}
+
+#tab3 {
+    margin: auto;
+    width: 1320px;
+}
+
+#tab3 ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: flex-end;
+}
+
+#tab3 ul li h2 {
+    padding: 20px 0;
+}
+
+#tab3 ul li img:hover {
+    transform: scale(0.9, 0.9);
+    transition: all 0.5s
+}
+
+#tab4 {
+    margin: auto;
+    width: 1320px;
+}
+
+#tab4 ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: flex-end;
+}
+
+#tab4 ul li {
+    width: 25%;
+}
+
+#tab4 ul li h2 {
+    padding: 20px 0;
+}
+
+#tab4 ul li img:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.5s;
+}
+
+#footer {
+    background-color: #ffeb99;
+    margin-top: 80px;
+    font-family: 'Binggrae';
+}
+
+#footer_inner {
+    margin: auto;
+    width: 1320px;
+    display: flex;
+
+}
+
+#f_logo {
+    float: left;
+    padding-top: 60px;
+    padding-left: 130px;
+}
+
+.f_text {
+    padding-left: 225px;
+
+}
+
+.f_text ul li {
+    float: left;
+    padding: 10px 40px;
+    padding-left: 0px;
+    font-weight: bold;
+
+}
+
+.name {
+    padding-top: 20px;
+}
+
+.f_text h5 {
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+.f_text p {
+    padding-top: 20px;
+}
+
+#f_img {
+    justify-content: space-between;
+    margin-left: 250px;
+    padding-top: 10px;
+}
